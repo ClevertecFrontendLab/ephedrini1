@@ -20,7 +20,10 @@ function App() {
                 <Box>
                     <Header />
                     <Flex>
-                        <AccordionMenu />
+                        <Box py={8}>
+                            <AccordionMenu />
+                        </Box>
+
                         <Routes>
                             <Route path='/*' element={<MainPage />} />
                             <Route path='/vegan' element={<Vegan />} />

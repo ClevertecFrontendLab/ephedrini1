@@ -19,9 +19,9 @@ export function AccordionMenu() {
                 <AccordionItem key={index} id={item.name}>
                     <h2>
                         <AccordionButton>
-                            <Box flex='1' textAlign='left' w={220}>
+                            <Box flex='1' textAlign='left' w={200} py='3px'>
                                 <Flex gap={3}>
-                                    <img src='assets/icons/nav-icons/salad-icon.svg' />
+                                    <img src={item.image} />
                                     {item.name}
                                 </Flex>
                             </Box>

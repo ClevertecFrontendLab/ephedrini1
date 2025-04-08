@@ -1,10 +1,12 @@
 export const data = [
     {
-        name: 'салаты',
+        name: 'Cалаты',
+        image: 'assets/icons/nav-icons/salad.svg',
         value: ['Мясные салаты', 'Рыбные салаты', 'Овощные салаты', 'Теплые салаты'],
     },
     {
         name: 'Закуски',
+        image: 'assets/icons/nav-icons/healthy.svg',
         value: [
             'Мясные закуски',
             'Рыбные закуски',
@@ -16,10 +18,12 @@ export const data = [
     },
     {
         name: 'Первые блюда',
+        image: 'assets/icons/nav-icons/soup.svg',
         value: ['Мясные супы', 'Овощные супы', 'Бульоны', 'Холодные супы', 'Диетические супы'],
     },
     {
         name: 'Вторые блюда',
+        image: 'assets/icons/nav-icons/pan.png',
         value: [
             'Мясные',
             'Рыбные',
@@ -37,6 +41,7 @@ export const data = [
     },
     {
         name: 'Десерты и выпечка',
+        image: 'assets/icons/nav-icons/bread.svg',
         value: [
             'Блины и оладьи',
             'Пироги и пончики',
@@ -53,9 +58,14 @@ export const data = [
             'Кремы',
         ],
     },
-    { name: 'Блюда на гриле', value: ['Говядина', 'Свинина', 'Птица', 'Рыба', 'Грибы', 'Овощи'] },
+    {
+        name: 'Блюда на гриле',
+        image: 'assets/icons/nav-icons/machine.svg',
+        value: ['Говядина', 'Свинина', 'Птица', 'Рыба', 'Грибы', 'Овощи'],
+    },
     {
         name: 'Веганская кухня',
+        image: 'assets/icons/nav-icons/vegan.svg',
         value: [
             'Закуски',
             'Первые блюда',
@@ -69,6 +79,7 @@ export const data = [
     },
     {
         name: 'Детские блюда',
+        image: 'assets/icons/nav-icons/child.svg',
         value: [
             'Первые блюда',
             'Вторые блюда',
@@ -82,6 +93,7 @@ export const data = [
     },
     {
         name: 'Лечебное питание',
+        image: 'assets/icons/nav-icons/medicine.svg',
         value: [
             'Детская диета',
             'Диета №1',
@@ -103,7 +115,8 @@ export const data = [
         ],
     },
     {
-        name: 'Национальные блюда',
+        name: 'Национальные',
+        image: 'assets/icons/nav-icons/international.svg',
         value: [
             'Американская кухня',
             'Армянская кухня',
@@ -122,9 +135,14 @@ export const data = [
             'Другая кухня',
         ],
     },
-    { name: 'Соусы', value: ['Соусы мясные', 'Соусы сырные', 'Маринады'] },
+    {
+        name: 'Соусы',
+        image: 'assets/icons/nav-icons/souce.svg',
+        value: ['Соусы мясные', 'Соусы сырные', 'Маринады'],
+    },
     {
         name: 'Напитки',
+        image: 'public/assets/icons/nav-icons/tea.svg',
         value: [
             'Соки и фреши',
             'Смузи',
@@ -139,6 +157,7 @@ export const data = [
     },
     {
         name: 'Заготовки',
+        image: 'assets/icons/nav-icons/pasta.svg',
         value: [
             'Мясные заготовки',
             'Рыбные заготовки',
