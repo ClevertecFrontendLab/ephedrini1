@@ -1,10 +1,12 @@
 export const data = [
     {
+        id: 'vegan',
         name: 'Cалаты',
         image: 'assets/icons/nav-icons/salad.svg',
         value: ['Мясные салаты', 'Рыбные салаты', 'Овощные салаты', 'Теплые салаты'],
     },
     {
+        id: 'vegan',
         name: 'Закуски',
         image: 'assets/icons/nav-icons/healthy.svg',
         value: [
@@ -17,11 +19,13 @@ export const data = [
         ],
     },
     {
+        id: 'vegan',
         name: 'Первые блюда',
         image: 'assets/icons/nav-icons/soup.svg',
         value: ['Мясные супы', 'Овощные супы', 'Бульоны', 'Холодные супы', 'Диетические супы'],
     },
     {
+        id: 'vegan',
         name: 'Вторые блюда',
         image: 'assets/icons/nav-icons/pan.png',
         value: [
@@ -40,6 +44,7 @@ export const data = [
         ],
     },
     {
+        id: 'vegan',
         name: 'Десерты и выпечка',
         image: 'assets/icons/nav-icons/bread.svg',
         value: [
@@ -59,11 +64,13 @@ export const data = [
         ],
     },
     {
+        id: 'vegan',
         name: 'Блюда на гриле',
         image: 'assets/icons/nav-icons/machine.svg',
         value: ['Говядина', 'Свинина', 'Птица', 'Рыба', 'Грибы', 'Овощи'],
     },
     {
+        id: 'vegan',
         name: 'Веганская кухня',
         image: 'assets/icons/nav-icons/vegan.svg',
         value: [
@@ -78,6 +85,7 @@ export const data = [
         ],
     },
     {
+        id: 'vegan',
         name: 'Детские блюда',
         image: 'assets/icons/nav-icons/child.svg',
         value: [
@@ -92,6 +100,7 @@ export const data = [
         ],
     },
     {
+        id: 'vegan',
         name: 'Лечебное питание',
         image: 'assets/icons/nav-icons/medicine.svg',
         value: [
@@ -115,6 +124,7 @@ export const data = [
         ],
     },
     {
+        id: 'vegan',
         name: 'Национальные',
         image: 'assets/icons/nav-icons/international.svg',
         value: [
@@ -136,13 +146,14 @@ export const data = [
         ],
     },
     {
+        id: 'vegan',
         name: 'Соусы',
         image: 'assets/icons/nav-icons/souce.svg',
         value: ['Соусы мясные', 'Соусы сырные', 'Маринады'],
     },
     {
         name: 'Напитки',
-        image: 'public/assets/icons/nav-icons/tea.svg',
+        image: 'assets/icons/nav-icons/tea.svg',
         value: [
             'Соки и фреши',
             'Смузи',
@@ -156,6 +167,7 @@ export const data = [
         ],
     },
     {
+        id: 'vegan',
         name: 'Заготовки',
         image: 'assets/icons/nav-icons/pasta.svg',
         value: [
