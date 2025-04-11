@@ -12,14 +12,14 @@ import {
 
 import { data } from '~/navigation-data';
 
-export function AccordionMenu() {
+export function AccordionMenu(_props: { onClick: () => void }) {
     return (
-        <Accordion allowToggle>
-            {data.map((item, index) => (
-                <AccordionItem key={index} id={item.name}>
+        <Accordion allowToggle overflowY='scroll'>
+            {data.map((item) => (
+                <AccordionItem>
                     <h2>
-                        <AccordionButton>
-                            <Box flex='1' textAlign='left' w={200} py='3px'>
+                        <AccordionButton as='a'>
+                            <Box as='span' flex='1' textAlign='left' py='3px'>
                                 <Flex gap={3}>
                                     <img src={item.image} />
                                     {item.name}
@@ -29,7 +29,13 @@ export function AccordionMenu() {
                         </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4}>
-                        <UnorderedList textAlign='left' styleType="''">
+                        <UnorderedList
+                            textAlign='left'
+                            styleType="''"
+                            spacing={2}
+                            fontSize='18px'
+                            pl='25px'
+                        >
                             {item.value.map((el) => (
                                 <ListItem>{el}</ListItem>
                             ))}
