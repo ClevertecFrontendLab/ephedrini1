@@ -70,7 +70,7 @@ export const data = [
         value: ['Говядина', 'Свинина', 'Птица', 'Рыба', 'Грибы', 'Овощи'],
     },
     {
-        id: 'vegan',
+        id: 'vegan-cuisine',
         name: 'Веганская кухня',
         image: 'assets/icons/nav-icons/vegan.svg',
         value: [
