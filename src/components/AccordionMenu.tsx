@@ -10,7 +10,7 @@ import {
     UnorderedList,
 } from '@chakra-ui/react';
 
-import { data } from '~/navigation-data';
+import { data } from '~/data/navigation-data';
 
 export function AccordionMenu(_props: { onClick: () => void }) {
     return (
@@ -18,7 +18,7 @@ export function AccordionMenu(_props: { onClick: () => void }) {
             {data.map((item) => (
                 <AccordionItem>
                     <h2>
-                        <AccordionButton as='a'>
+                        <AccordionButton as='a' data-test-id={item.id}>
                             <Box as='span' flex='1' textAlign='left' py='3px'>
                                 <Flex gap={3}>
                                     <img src={item.image} />

@@ -10,7 +10,7 @@ import {
     Text,
 } from '@chakra-ui/react';
 
-import { data } from '~/cards-data-new';
+import { data } from '~/data/cards-data-new';
 
 export function YCard() {
     return (
