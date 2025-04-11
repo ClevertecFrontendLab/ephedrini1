@@ -1,34 +1,27 @@
 import './App.css';
 
 import { Box, ChakraProvider, Flex } from '@chakra-ui/react';
-import { Route, Routes } from 'react-router';
+import { useNavigate } from 'react-router';
 
-import { AccordionMenu } from '~/components/AccordionMenu';
 import { Aside } from '~/components/aside';
+import { AsideLeft } from '~/components/asideLeft';
 import { Header } from '~/components/Header';
-import { MainPage } from '~/pages/MainPage';
-import { MostPopular } from '~/pages/MostPopular';
-import { Vegan } from '~/pages/Vegan';
+import { AppRoutes } from '~/components/route';
+import theme from '~/components/theming/theme';
 import { useGetPostsQuery } from '~/query/services/posts.ts';
 
 function App() {
     const { data: _data, isLoading: _isLoading } = useGetPostsQuery();
-
+    const navigate = useNavigate();
     return (
         <>
-            <ChakraProvider>
+            <ChakraProvider theme={theme}>
                 <Box>
-                    <Header />
+                    <Header onClick={() => navigate('/')} />
                     <Flex>
-                        <Box py={8}>
-                            <AccordionMenu />
-                        </Box>
+                        <AsideLeft />
 
-                        <Routes>
-                            <Route path='/*' element={<MainPage />} />
-                            <Route path='/vegan' element={<Vegan />} />
-                            <Route path='/mostpopular' element={<MostPopular />} />
-                        </Routes>
+                        <AppRoutes />
                         <Aside />
                     </Flex>
                 </Box>
