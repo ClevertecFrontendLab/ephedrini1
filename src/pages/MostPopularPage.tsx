@@ -1,16 +1,15 @@
-import { Box, Flex, Heading } from '@chakra-ui/react';
+import { Box, Flex } from '@chakra-ui/react';
 
+import { MostPopularCardList } from '~/components/CardList/MostPopularCardsList';
 import { HeaderConatainer } from '~/components/headerContainer';
 
 export function MostPopularPage() {
     return (
-        <Box pt='115px'>
+        <Box pt='100px'>
             <Flex justify='center' align='center' flexDir='column'>
-                <Heading data-test-id='header' as='header'>
-                    Самое сочное
-                </Heading>
                 <HeaderConatainer />
             </Flex>
+            <MostPopularCardList />
         </Box>
     );
 }
