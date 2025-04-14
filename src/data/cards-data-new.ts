@@ -1,17 +1,20 @@
+import { SoupIcon } from '~/components/customIcons/soupIcon';
+import { VeganIcon } from '~/components/customIcons/veganIcon';
+
 export const data = [
     {
         image: 'assets/image/image1.jpg',
         title: 'Солянка с грибами',
         text: 'Как раз после праздников, когда мясные продукты еще остались, но никто их уже не хочет, время варить солянку.',
         tag: 'Первые блюда',
-        icon: 'assets/icons/nav-icons/soup.svg',
+        icon: SoupIcon(),
     },
     {
         image: 'assets/image/image2.jpg',
         title: 'Капустные котлеты',
         text: 'Капустные котлеты по этому рецепту получаются необычайно пышными и  невероятно вкусными. Мягкий вкус и лёгкая пряная нотка наверняка помогут сделать эти чудесные котлеты из капусты одним из ваших любимых овощных  блюд.',
         tag: 'Веганские блюда',
-        icon: 'assets/icons/nav-icons/pan.svg',
+        icon: VeganIcon(),
     },
     {
         image: 'assets/image/image3.jpg',
