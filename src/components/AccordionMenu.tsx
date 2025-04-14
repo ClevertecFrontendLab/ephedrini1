@@ -9,24 +9,28 @@ import {
     ListItem,
     UnorderedList,
 } from '@chakra-ui/react';
+import { Link as ChakraLink } from '@chakra-ui/react';
+import { Link as ReactRouterLink } from 'react-router';
 
 import { data } from '~/data/navigation-data';
 
-export function AccordionMenu(_props: { onClick: () => void }) {
+export function AccordionMenu() {
     return (
         <Accordion allowToggle overflowY='scroll'>
             {data.map((item) => (
                 <AccordionItem>
                     <h2>
-                        <AccordionButton as='a' data-test-id={item.id}>
-                            <Box as='span' flex='1' textAlign='left' py='3px'>
-                                <Flex gap={3}>
-                                    <img src={item.image} />
-                                    {item.name}
-                                </Flex>
-                            </Box>
-                            <AccordionIcon />
-                        </AccordionButton>
+                        <ChakraLink as={ReactRouterLink} to='/vegan'>
+                            <AccordionButton as='a' data-test-id={item.id}>
+                                <Box as='span' flex='1' textAlign='left' py='3px'>
+                                    <Flex gap={3}>
+                                        <img src={item.image} />
+                                        {item.name}
+                                    </Flex>
+                                </Box>
+                                <AccordionIcon />
+                            </AccordionButton>
+                        </ChakraLink>
                     </h2>
                     <AccordionPanel pb={4}>
                         <UnorderedList

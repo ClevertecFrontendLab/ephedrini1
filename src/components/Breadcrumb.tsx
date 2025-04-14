@@ -4,8 +4,6 @@ import { Link, useLocation } from 'react-router';
 
 export function BreadCrumb() {
     const location = useLocation();
-    console.log(location.pathname);
-    console.log(location);
 
     return (
         <Breadcrumb spacing='1px' separator={<ChevronRightIcon color='gray.500' />}>
