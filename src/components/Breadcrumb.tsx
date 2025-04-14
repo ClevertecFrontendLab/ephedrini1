@@ -1,22 +1,24 @@
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
-import { Link } from 'react-router';
+import { Link, useLocation } from 'react-router';
 
 export function BreadCrumb() {
+    const location = useLocation();
+    console.log(location.pathname);
+    console.log(location);
+
     return (
         <Breadcrumb spacing='1px' separator={<ChevronRightIcon color='gray.500' />}>
-            {/* <BreadcrumbItem>
-                <BreadcrumbLink as={Link} to='/*'>
-                    Home
-                </BreadcrumbLink>
-            </BreadcrumbItem> */}
             <BreadcrumbItem>
-                <BreadcrumbLink as={Link} to='/*'>
-                    Link1
+                <BreadcrumbLink as={Link} to='/'>
+                    Главная
                 </BreadcrumbLink>
             </BreadcrumbItem>
-            <BreadcrumbItem isCurrentPage>
-                <BreadcrumbLink>Главная</BreadcrumbLink>
+            <BreadcrumbItem>
+                <BreadcrumbLink as={Link} to={location} isCurrentPage>
+                    {location.pathname === '/vegan' ? 'Вегетарианская кухня' : null}
+                    {location.pathname === '/most-popular' ? 'Сaмое сочное' : null}
+                </BreadcrumbLink>
             </BreadcrumbItem>
         </Breadcrumb>
     );
