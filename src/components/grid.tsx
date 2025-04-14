@@ -1,22 +1,22 @@
 import { Grid, GridItem } from '@chakra-ui/react';
 
+import { AppRoutes } from './appRoutes';
 import { Aside } from './aside';
 import { AsideLeft } from './asideLeft';
 import { Header } from './Header';
-import { AppRoutes } from './route';
 
 export function GridLayout() {
     return (
         <Grid
             w='100%'
-            maxW='1920px'
+            maxW={['480px', '768px', '1024px', '1440px', '1920px']}
             m='0 auto'
             templateAreas={`"header header header"
                   "nav main aside"
                   "nav footer aside"`}
             gridTemplateRows='80px 1fr 30px'
-            gridTemplateColumns={['0px 1fr 0px', null, null, '256px 1fr 256px']}
-            gap='1'
+            gridTemplateColumns={['0px 1fr 0px', null, null, null, '256px 1fr 256px']}
+            gap='2'
         >
             <GridItem
                 pos='fixed'
@@ -30,10 +30,10 @@ export function GridLayout() {
             >
                 <Header />
             </GridItem>
-            <GridItem pl='2' area='nav' pos='fixed' maxH='100vh' hideBelow='lg'>
+            <GridItem pl='2' area='nav' pos='fixed' maxH='100vh' hideBelow='xl'>
                 <AsideLeft />
             </GridItem>
-            <GridItem pl='2' area='main' maxW='1360px' h='100vh'>
+            <GridItem pl='2' area='main' h='100vh' px='24px'>
                 <AppRoutes />
             </GridItem>
             <GridItem
@@ -43,11 +43,11 @@ export function GridLayout() {
                 top='80'
                 right='0'
                 maxH='100vh'
-                hideBelow='lg'
+                hideBelow='xl'
             >
                 <Aside />
             </GridItem>
-            <GridItem pl='2' area='footer' hideFrom='lg'>
+            <GridItem pl='2' area='footer' hideFrom='xl'>
                 Footer
             </GridItem>
         </Grid>
