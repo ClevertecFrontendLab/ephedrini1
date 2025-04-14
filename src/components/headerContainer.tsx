@@ -19,7 +19,7 @@ import { LeftIcon } from './customIcons/leftIcon';
 export function HeaderConatainer() {
     const location = useLocation();
     return (
-        <Box className='header-container' w={[]}>
+        <Box className='header-container' as='header' data-test-id='header'>
             <Flex flexDirection='column' justifyContent='space-around' gap='25px'>
                 <Heading as='h1' fontSize='50px'>
                     {location.pathname === '/' ? 'Приятного аппетита!' : null}
