@@ -1,8 +1,7 @@
 import { SimpleGrid } from '@chakra-ui/react';
 
+import { XCard } from '~/components/XCard';
 import { data } from '~/data/cards-data-popular';
-
-import { XCard } from '../XCard';
 export function MostPopularCardList() {
     return (
         <SimpleGrid columns={[1, 1, 1, 1, 1, 2]} spacing={2}>

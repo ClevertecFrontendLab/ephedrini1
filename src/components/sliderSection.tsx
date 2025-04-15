@@ -1,8 +1,7 @@
 import { Box, Flex, Heading } from '@chakra-ui/react';
 
+import { YCard } from '~/components/YCard';
 import { data } from '~/data/cards-data-new';
-
-import { YCard } from './YCard';
 export function SliderSection() {
     return (
         <Box as='section' mt='45px' overflowX='hidden'>

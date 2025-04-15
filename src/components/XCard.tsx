@@ -11,9 +11,8 @@ import {
     Text,
 } from '@chakra-ui/react';
 
+import SaveIcon from '~/components/customIcons/saveIcon';
 import { RecipeCard } from '~/types/cards';
-
-import SaveIcon from './customIcons/saveIcon';
 
 export function XCard(card: RecipeCard) {
     return (

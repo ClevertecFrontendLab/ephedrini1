@@ -1,10 +1,10 @@
 import { Box, Grid, GridItem } from '@chakra-ui/react';
 
-import { AppRoutes } from './appRoutes';
-import { Aside } from './aside';
-import { AsideLeft } from './asideLeft';
-import { Header } from './Header';
-import { HeaderConatainer } from './headerContainer';
+import { AppRoutes } from '~/components/appRoutes';
+import { Aside } from '~/components/aside';
+import { AsideLeft } from '~/components/asideLeft';
+import { Header } from '~/components/Header';
+import { HeaderConatainer } from '~/components/headerContainer';
 
 export function GridLayout() {
     return (

@@ -1,9 +1,8 @@
 import { ArrowForwardIcon } from '@chakra-ui/icons';
 import { Box, Flex, Heading, Link, SimpleGrid } from '@chakra-ui/react';
 
+import { BlogerCard } from '~/components/blogerCard';
 import { data } from '~/data/bloger-data';
-
-import { BlogerCard } from '../blogerCard';
 
 export function BlogsSection() {
     return (

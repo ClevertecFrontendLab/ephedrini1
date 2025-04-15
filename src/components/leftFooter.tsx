@@ -1,6 +1,6 @@
 import { Box, Link, Text } from '@chakra-ui/react';
 
-import { ExitIcon } from './customIcons/exitIcon';
+import { ExitIcon } from '~/components/customIcons/exitIcon';
 
 export const LeftFooter: React.FC = () => (
     <Box as='footer' w='280px' data-test-id='footer'>

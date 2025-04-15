@@ -14,7 +14,7 @@ import {
 } from '@chakra-ui/react';
 import { useLocation } from 'react-router';
 
-import { LeftIcon } from './customIcons/leftIcon';
+import { LeftIcon } from '~/components/customIcons/leftIcon';
 
 export function HeaderConatainer() {
     const location = useLocation();
