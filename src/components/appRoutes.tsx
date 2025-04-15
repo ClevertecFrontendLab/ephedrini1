@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router';
 
 import { MainPage } from '~/pages/mainPage';
 import { MostPopularPage } from '~/pages/mostPopularPage';
-import { Vegan } from '~/pages/Vegan';
+import { Vegan } from '~/pages/vegan';
 
 export const AppRoutes: React.FC = () => {
     const navigationRoutes = [

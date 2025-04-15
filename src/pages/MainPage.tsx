@@ -2,7 +2,7 @@ import { Box, Flex } from '@chakra-ui/react';
 
 import { MostPopularSection } from '~/components/mostPopularSection';
 import { RelevantSectionLarge } from '~/components/relevantSectionLarge';
-import { BlogsSection } from '~/components/sections/blogsSection';
+import { BlogsSection } from '~/components/sections/blogs-section';
 import { SliderSection } from '~/components/sliderSection';
 
 export function MainPage() {

@@ -2,7 +2,7 @@ import { Box, Button, Flex, Heading } from '@chakra-ui/react';
 import { Link as ChakraLink } from '@chakra-ui/react';
 import { Link as ReactRouterLink } from 'react-router';
 
-import { MostPopularCardList } from './CardList/MostPopularCardsList';
+import { MostPopularCardList } from './CardList/mostPopularCardsList';
 
 export function MostPopularSection() {
     return (

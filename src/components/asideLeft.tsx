@@ -1,6 +1,6 @@
 import { Box, Flex } from '@chakra-ui/react';
 
-import { AccordionMenu } from './AccordionMenu';
+import { AccordionMenu } from './accordionMenu';
 import { LeftFooter } from './leftFooter';
 
 export const AsideLeft: React.FC = () => (

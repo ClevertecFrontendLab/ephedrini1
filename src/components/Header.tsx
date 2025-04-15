@@ -1,7 +1,7 @@
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { Avatar, Flex, Text, WrapItem } from '@chakra-ui/react';
 
-import { BreadCrumb } from './Breadcrumbs';
+import { BreadCrumb } from './breadcrumbs';
 import { Logo } from './logo';
 
 export function Header() {
