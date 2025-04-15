@@ -13,9 +13,9 @@ export function BreadCrumb() {
                 </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbItem>
-                <BreadcrumbLink as={Link} to={location} isCurrentPage>
-                    {location.pathname === '/vegan' ? 'Вегетарианская кухня' : null}
-                    {location.pathname === '/most-popular' ? 'Сaмое сочное' : null}
+                <BreadcrumbLink as={Link} to={location}>
+                    {location.pathname === '/vegan' ? 'Веганская кухня' : null}
+                    {location.pathname === '/most-popular' ? 'Самое сочное' : null}
                 </BreadcrumbLink>
             </BreadcrumbItem>
         </Breadcrumb>
