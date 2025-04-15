@@ -1,6 +1,6 @@
 import { Box, Flex } from '@chakra-ui/react';
 
-import { MostPopularCardList } from '~/components/cardList/mostPopularCardsList';
+import { MostPopularCardList } from '~/components/mostPopularCardsList';
 
 export function MostPopularPage() {
     return (

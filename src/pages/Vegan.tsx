@@ -1,6 +1,6 @@
 import { Box, Tab, TabList, Tabs } from '@chakra-ui/react';
 
-import { VeganPageCardList } from '~/components/cardList/veganCardList';
+import { VeganPageCardList } from '~/components/veganCardList';
 
 export function Vegan() {
     return (
