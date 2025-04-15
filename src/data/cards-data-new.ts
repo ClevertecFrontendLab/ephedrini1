@@ -1,0 +1,33 @@
+import { SoupIcon } from '~/components/customIcons/soupIcon';
+import { VeganIcon } from '~/components/customIcons/veganIcon';
+
+export const data = [
+    {
+        image: 'assets/image/image1.jpg',
+        title: 'Солянка с грибами',
+        text: 'Как раз после праздников, когда мясные продукты еще остались, но никто их уже не хочет, время варить солянку.',
+        tag: 'Первые блюда',
+        icon: SoupIcon(),
+    },
+    {
+        image: 'assets/image/image2.jpg',
+        title: 'Капустные котлеты',
+        text: 'Капустные котлеты по этому рецепту получаются необычайно пышными и  невероятно вкусными. Мягкий вкус и лёгкая пряная нотка наверняка помогут сделать эти чудесные котлеты из капусты одним из ваших любимых овощных  блюд.',
+        tag: 'Веганские блюда',
+        icon: VeganIcon(),
+    },
+    {
+        image: 'assets/image/image3.jpg',
+        title: 'Оладьи на кефире "Пышные"',
+        text: 'Очень вкусные и нежные оладьи на кефире. Настоятельно рекомендую пышные кефирные оладьи на завтрак.',
+        tag: 'Десерты, выпечка,',
+        icon: 'assets/icons/nav-icons/bread.svg',
+    },
+    {
+        image: 'assets/image/image4.jpg',
+        title: 'Салат "Здоровье"',
+        text: 'Сельдерей очень полезен для здоровья, пора набираться витаминов. Не  салат, а сплошное удовольствие:) Вкусный, необычный, а главное быстрый.',
+        tag: 'Салаты',
+        icon: 'assets/icons/nav-icons/salad.svg',
+    },
+];
