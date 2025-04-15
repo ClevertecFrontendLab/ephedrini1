@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Routes } from 'react-router';
 
-import { MainPage } from '~/pages/MainPage';
-import { MostPopularPage } from '~/pages/MostPopularPage';
+import { MainPage } from '~/pages/mainPage';
+import { MostPopularPage } from '~/pages/mostPopularPage';
 import { Vegan } from '~/pages/Vegan';
 
 export const AppRoutes: React.FC = () => {

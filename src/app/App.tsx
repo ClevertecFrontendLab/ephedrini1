@@ -1,8 +1,8 @@
 import './App.css';
 
-import { ChakraProvider } from '@chakra-ui/react';
+import { Box, ChakraProvider } from '@chakra-ui/react';
 
-import { GridLayout } from '~/components/grid';
+import { GridLayout } from '~/components/gridLayout';
 import { useGetPostsQuery } from '~/query/services/posts.ts';
 import theme from '~/UI-kit/theme';
 
@@ -12,7 +12,9 @@ function App() {
     return (
         <>
             <ChakraProvider theme={theme}>
-                <GridLayout />
+                <Box>
+                    <GridLayout />
+                </Box>
             </ChakraProvider>
         </>
     );

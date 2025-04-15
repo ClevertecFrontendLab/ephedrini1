@@ -12,6 +12,7 @@ export function SliderSection() {
             <Flex wrap='nowrap' gap={['5px', '10px', '10px', 4, 6]}>
                 {data.map((item) => (
                     <YCard
+                        key={item.title}
                         image={item.image}
                         title={item.title}
                         text={item.text}

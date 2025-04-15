@@ -1,12 +1,12 @@
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { Avatar, Flex, Text, WrapItem } from '@chakra-ui/react';
 
-import { BreadCrumb } from './Breadcrumb';
+import { BreadCrumb } from './Breadcrumbs';
 import { Logo } from './logo';
 
 export function Header() {
     return (
-        <Flex alignItems='center' w='100%'>
+        <Flex alignItems='center' w='100%' maxW='1920px' as='header' data-test-id='header'>
             <Logo />
             <Flex justify='space-between' w='100%'>
                 <BreadCrumb />

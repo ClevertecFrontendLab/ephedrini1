@@ -18,10 +18,10 @@ export function AccordionMenu() {
     return (
         <Accordion allowToggle overflowY='scroll'>
             {data.map((item) => (
-                <AccordionItem>
+                <AccordionItem key={item.name}>
                     <h2>
                         <ChakraLink as={ReactRouterLink} to='/vegan'>
-                            <AccordionButton as='a' data-test-id={item.id}>
+                            <AccordionButton as='li' data-test-id={item.id}>
                                 <Box as='span' flex='1' textAlign='left' py='3px'>
                                     <Flex gap={3}>
                                         <img src={item.image} />
@@ -41,7 +41,7 @@ export function AccordionMenu() {
                             pl='25px'
                         >
                             {item.value.map((el) => (
-                                <ListItem>{el}</ListItem>
+                                <ListItem key={el}>{el}</ListItem>
                             ))}
                         </UnorderedList>
                     </AccordionPanel>

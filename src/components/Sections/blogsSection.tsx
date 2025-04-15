@@ -18,6 +18,7 @@ export function BlogsSection() {
                 <SimpleGrid spacing={4} columns={[1, 3, 1, 3]}>
                     {data.map((item) => (
                         <BlogerCard
+                            key={item.title}
                             title={item.title}
                             subtitle={item.subtitle}
                             text={item.text}

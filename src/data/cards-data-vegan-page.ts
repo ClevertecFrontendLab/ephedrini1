@@ -2,6 +2,7 @@ import { ChildIcon } from '~/components/customIcons/childIcon';
 import { InternationalIcon } from '~/components/customIcons/internationalIcon';
 import { MachineIcon } from '~/components/customIcons/machineIcon';
 import { PanIcon } from '~/components/customIcons/panIcon';
+import { VeganIcon } from '~/components/customIcons/veganIcon';
 
 export const data = [
     {
@@ -10,6 +11,14 @@ export const data = [
         text: 'Картошка, тушенная с болгарским перцем, фасолью, морковью и луком, -  вариант сытного блюда на каждый день. Фасоль в данном случае заменяет  мясо, делая рагу сытным и питательным. Чтобы сократить время  приготовления, возьмём консервированную фасоль. Блюдо хоть и простое, но в полной мере наполнено ароматами и имеет выразительный вкус за счёт  добавления томатной пасты.',
         tag: 'Национальные',
         icon: InternationalIcon(),
+        kitchen: 'Веганская кухня',
+    },
+    {
+        image: 'assets/image/image2.jpg',
+        title: 'Капустные котлеты',
+        text: 'Капустные котлеты по этому рецепту получаются необычайно пышными и  невероятно вкусными. Мягкий вкус и лёгкая пряная нотка наверняка помогут сделать эти чудесные котлеты из капусты одним из ваших любимых овощных  блюд.',
+        tag: 'Веганские блюда',
+        icon: VeganIcon(),
         kitchen: 'Веганская кухня',
     },
     {
@@ -44,14 +53,7 @@ export const data = [
         icon: PanIcon(),
         kitchen: 'Веганская кухня',
     },
-    {
-        image: 'assets//image/image14.jpg',
-        title: 'Тефтели из булгура и чечевицы, запечённые в томатном соусе',
-        text: 'Тефтели из булгура и чечевицы – яркие и питательные, отлично подходят  для постного и вегетарианского меню. Тефтели получаются нежными, а также сочными и ароматными благодаря использованию томатного соуса и душистых пряностей.',
-        tag: 'Вторые блюда',
-        icon: PanIcon(),
-        kitchen: 'Веганская кухня',
-    },
+
     {
         image: 'assets//image/image15.jpg',
         title: 'Чесночная картошка',

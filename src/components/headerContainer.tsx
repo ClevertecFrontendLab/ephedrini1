@@ -19,13 +19,13 @@ import { LeftIcon } from './customIcons/leftIcon';
 export function HeaderConatainer() {
     const location = useLocation();
     return (
-        <Box className='header-container' as='header' data-test-id='header'>
+        <Box className='header-container'>
+            <Heading as='h1' fontSize='50px' mb='30px'>
+                {location.pathname === '/' ? 'Приятного аппетита!' : null}
+                {location.pathname === '/vegan' ? 'Веганская кухня' : null}
+                {location.pathname === '/most-popular' ? 'Сaмое сочное' : null}
+            </Heading>
             <Flex flexDirection='column' justifyContent='space-around' gap='25px'>
-                <Heading as='h1' fontSize='50px'>
-                    {location.pathname === '/' ? 'Приятного аппетита!' : null}
-                    {location.pathname === '/vegan' ? 'Веганская кухня' : null}
-                    {location.pathname === '/most-popular' ? 'Сaмое сочное' : null}
-                </Heading>
                 <Flex gap={3}>
                     <IconButton
                         variant='outline'
