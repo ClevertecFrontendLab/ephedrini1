@@ -3,7 +3,7 @@ import { Box, Flex, Heading, Link, SimpleGrid } from '@chakra-ui/react';
 
 import { data } from '~/data/bloger-data';
 
-import { BlogerCard } from '../CardList/blogerCard';
+import { BlogerCard } from '../cardList/blogerCard';
 
 export function BlogsSection() {
     return (
