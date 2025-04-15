@@ -3,7 +3,7 @@ import { Box, Grid, GridItem } from '@chakra-ui/react';
 import { AppRoutes } from './appRoutes';
 import { Aside } from './aside';
 import { AsideLeft } from './asideLeft';
-import { Header } from './header';
+import { Header } from './Header';
 import { HeaderConatainer } from './headerContainer';
 
 export function GridLayout() {
